@@ -1,0 +1,300 @@
+.home{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro{
+    max-width: 540px;
+    text-align: center;
+    z-index: 10;
+}
+.home_img{
+    margin-bottom: 1.5rem;
+}
+.home_name{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 0.5rem;
+}
+.change-text::before{
+    content: "Front-End developer";
+    animation: changeText infinite 5s;
+    font-weight: 600;
+    color: blue;
+}
+@keyframes changeText {
+    0%{
+        content: "Front-End developer";
+    }
+    2%{
+        content: "Front-End develope";
+    }
+    4%{
+        content: "Front-End develop";
+    }
+    6%{
+        content: "Front-End develo";
+    }
+    8%{
+        content: "Front-End devel";
+    }
+    10%{
+        content: "Front-End deve";
+    }
+    12%{
+        content: "Front-End dev";
+    }
+    14%{
+        content: "Front-End de";
+    }
+    16%{
+        content: "Front-End d";
+    }
+    18%{
+        content: "Front-End ";
+    }
+    20%{
+        content: "Front-End";
+    }
+    22%{
+        content: "Front-En";
+    }
+    24%{
+        content: "Front-E";
+    }
+    26%{
+        content: "Front-";
+    }
+    28%{
+        content: "Front";
+    }
+    30%{
+        content: "Fron";
+    }
+    32%{
+        content: "Fro";
+    }
+    34%{
+        content: "Fr";
+    }
+    36%{
+        content: "F";
+    }
+    38%{
+        content: "";
+    }
+    40%{
+        content: "B";
+        color: blue;
+    }
+    42%{
+        content: "Ba";
+    }
+    44%{
+        content: "Bac";
+    }
+    46%{
+        content: "Back";
+    }
+    48%{
+        content: "Back-";
+    }
+    50%{
+        content: "Back-E";
+    }
+    52%{
+        content: "Back-En";
+    }
+    54%{
+        content: "Back-End";
+    }
+    56%{
+        content: "Back-End ";
+    }
+    58%{
+        content: "Back-End d";
+    }
+    60%{
+        content: "Back-End de";
+    }
+    62%{
+        content: "Back-End dev";
+    }
+    64%{
+        content: "Back-End deve";
+    }
+    66%{
+        content: "Back-End devel";
+    }
+    68%{
+        content: "Back-End develo";
+    }
+    70%{
+        content: "Back-End develop";
+    }
+    72%{
+        content: "Back-End develope";
+    }
+    74%{
+        content: "Back-End developer";
+    }
+    76%{
+        content: "Back-End developer";
+    }
+    78%{
+        content: "Back-End developer";
+    }
+    80%{
+        content: "Back-End developer";
+    }
+    82%{
+        content: "Back-End developer";
+    }
+    84%{
+        content: "Back-End developer";
+    }
+    86%{
+        content: "Back-End developer";
+    }
+    88%{
+        content: "Back-End developer";
+    }
+    90%{
+        content: "Back-End developer";
+    }
+    92%{
+        content: "Front-End developer";
+        color: red;
+    }
+    94%{
+        content: "Front-End developer";
+    }
+    96%{
+        content: "Front-End developer";
+    }
+    98%{
+        content: "Front-End developer";
+    }
+    100%{
+        content: "Front-End developer";
+    }
+}
+.home_socials{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.75rem;
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+.home_social-link{
+    color: var(--title-color);
+    font-size: 3rem;
+    transition: .3s;
+}
+.home_social-link:hover{
+    color: hsl(1, 100%, 69%);
+}
+.scroll_down{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    width: 100%;
+}
+
+.home_scroll-name{
+    font-size: var(--small-font-size);
+}
+
+.mouse{
+    border: 2px solid #454360;
+    display: block;
+    height: 1.6rem;
+    width: 1.25rem;
+    margin: auto;
+    margin-top: 0.75rem;
+    border-radius: 1rem;
+    position: relative;
+}
+@keyframes ani-mouse {
+    0%{
+        top: 50%;
+    }
+    15%{
+        top: 30%;
+    }
+    50%{
+        top: 30%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+.wheel{
+    background-color: var(--title-color);
+    border-radius: 100%;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: 0.35rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ani-mouse 2s linear infinite;
+}
+
+.shapes{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    .shape{
+        position: absolute;
+    }
+    .s1{
+        left: 2%;
+        top: 10%;
+    }
+    .s2{
+        left: 18%;
+        top: 30%;
+    }
+    .s3{
+        left: 5%;
+        bottom: 30%;
+    }
+    .s4{
+        left: 2%;
+        bottom: 10%;
+    }
+    .s5{
+        left: 44%;
+        top: 10%;
+    }
+    .s6{
+        left: 36%;
+        bottom: 10%;
+    }
+    .s7{
+        top: 20%;
+        right: 25%;
+    }
+    .s8{
+        right: 24%;
+        bottom: 20%;
+    }
+    .s9{
+        right: 2%;
+        top: 10%;
+    }
+    .s10{
+        top: 45%;
+        right: 11%;
+    }
+    .s11{
+        bottom: 10%;
+        right: 2%;
+    }
+}
