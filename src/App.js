@@ -9,11 +9,13 @@ import Pricing from './components/pricing/Pricing'
 import Blog from './components/blog/Blog'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
+import { useState } from 'react';
 function App() {
+  const [mode, setMode] = useState(false);
   return (
     <>
-      <Sidebar />
-      <main className='main'>
+      <Sidebar setMode={setMode} mode={mode} />
+      <main className='main' data-theme={mode ? 'dark' : 'light'}>
         <Home />
         <About />
         <Service />
@@ -23,7 +25,7 @@ function App() {
         <Testimonials />
         <Blog />
         <Contact />
-      </main>
+      </main >
     </>
   );
 }

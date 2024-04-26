@@ -1,0 +1,76 @@
+{
+    "language": {
+        "name": "Choose Language",
+        "close": "Close"
+    },
+    "home": {
+        "name": "Tran Le Anh Tuan",
+        "iam": "I'm a",
+        "contact": "Contact",
+        "scroll": "Scroll Down"
+    },
+    "about": {
+        "name": "About me",
+        "desc": "I am Tran Le Anh Tuan, web developer from Viet Nam. I have rich experience in web site design and building and customization, also I am good at ReactJS.",
+        "download": "Download CV",
+        "development": "Website Development",
+        "uiux": "UI/UX design",
+        "photography": "Photography",
+        "completed": "Project completed",
+        "coffee": "Cup of coffee",
+        "satisfied": "Satisfied clients"
+    },
+    "services": {
+        "name": "Services"
+    },
+    "experience": {
+        "name": "Experience"
+    },
+    "work": {
+        "name": "Recent Works",
+        "nav1": "Everything",
+        "nav2": "Creative",
+        "nav3": "Art",
+        "nav4": "Design",
+        "nav5": "Branding"
+    },
+    "price": {
+        "name": "Pricing Plans",
+        "title1": "Basic",
+        "title2": "Premium",
+        "title3": "Ultimate",
+        "recommend": "Recommended",
+        "desc1": "A Simple option but powerful to manage your business",
+        "sub1": "Email support",
+        "desc2": "Unlimited product including app integration and more features",
+        "sub2": "Mon-Fri support",
+        "desc3": "A wise option for large companies and individuals",
+        "sub3": "24/7 support",
+        "month": "Month",
+        "started": "Get Started"
+    },
+    "review": {
+        "name": "Clients & Reviews",
+        "sub": "Product designer at Dribble",
+        "comment": "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍"
+    },
+    "blog": {
+        "name": "Latest Posts",
+        "title1": "5 Best App Development Tool for Your Projects",
+        "title2": "Common Misconceptions About Payment",
+        "title3": "3 Things to know about startup business",
+        "sub1": "09 February, 2022",
+        "sub2": "07 February, 2022",
+        "sub3": "05 February, 2022"
+    },
+    "contact": {
+        "name": "Get In Touch",
+        "title": "Let's talk about everything!",
+        "sub": "Don't like forms? Send me an email.",
+        "btn": "Send Message",
+        "ip1": "Insert your Name",
+        "ip2": "Insert your Email",
+        "ip3": "Insert your Subject",
+        "ip4": "Write your Message"
+    }
+}

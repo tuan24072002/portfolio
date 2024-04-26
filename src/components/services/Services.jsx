@@ -3,34 +3,36 @@ import './Services.scss'
 import img1 from '../../assets/service-1.svg';
 import img2 from '../../assets/service-2.svg';
 import img3 from '../../assets/service-3.svg';
+import { useTranslation } from 'react-i18next';
 
-const data = [
-    {
-        id: 1,
-        image: img1,
-        title: "UI/UX design",
-        description:
-            "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
-    },
-    {
-        id: 2,
-        image: img2,
-        title: "Web Development",
-        description:
-            "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
-    },
-    {
-        id: 3,
-        image: img3,
-        title: "Photography",
-        description:
-            "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
-    },
-];
 const Services = () => {
+    const { t } = useTranslation()
+    const data = [
+        {
+            id: 1,
+            image: img1,
+            title: t(`about.uiux`),
+            description:
+                "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+        },
+        {
+            id: 2,
+            image: img2,
+            title: t(`about.development`),
+            description:
+                "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+        },
+        {
+            id: 3,
+            image: img3,
+            title: t(`about.photography`),
+            description:
+                "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+        },
+    ];
     return (
         <section className="services container section" id='services'>
-            <h2 className="section_title">Services</h2>
+            <h2 className="section_title">{t(`services.name`)}</h2>
 
             <div className="services_container grid">
                 {

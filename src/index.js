@@ -5,6 +5,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'bootstrap/dist/css/bootstrap.css';
+import './utils/i18n'
 import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

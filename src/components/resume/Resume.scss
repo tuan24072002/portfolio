@@ -43,10 +43,14 @@
 }
 
 .timeline_date{
-    color: #8b88b1;
+    color: var(--date-color);
     font-size: var(--small-font-size);
 }
 .timeline_title{
+    color: var(--title-color);
     font-size:  var(--h3-font-size);
     margin: 0.5rem 0;
+}
+.timeline_text{
+    color: var(--text-color);
 }

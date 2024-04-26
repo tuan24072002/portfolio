@@ -17,9 +17,10 @@
 }
 .testimonials_title{
     margin-top: 0.75rem;
+    color: var(--title-color);
 }
 .subtitle{
-    color: #8b88b1;
+    color: var(--date-color);
     font-size: var(--small-font-size);
 }
 .comment{
@@ -30,6 +31,7 @@
     border-radius: var(--border-radius);
     position: relative;
     margin-bottom: 3rem;
+    color: var(--date-color);
 }
 
 .comment::before{

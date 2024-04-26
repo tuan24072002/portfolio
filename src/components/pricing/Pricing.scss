@@ -16,14 +16,17 @@
 .pricing_plan{
     margin: 1.25rem 0;
     font-size: var(--h2-font-size);
+    color: var(--title-color);
 }
 .pricing_title,
 .pricing_support{
     margin-bottom: 1rem;
+    color: var(--text-color);
 }
 .price{
     font-size: var(--h1-font-size);
     font-weight: var(--font-bold);
+    color: var(--title-color);
 }
 .price em{
     font-style: normal;
@@ -50,7 +53,7 @@
     top: 0;
     color: #fff;
     background-color: #6c6ce5;
-    padding: 0.25rem 0.75rem;
+    padding: 0.5rem 0.825rem;
     font-size: var(--small-font-size);
     border-top-right-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);

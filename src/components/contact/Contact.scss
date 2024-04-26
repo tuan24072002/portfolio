@@ -9,6 +9,10 @@
 .contact_title{
     font-size: var(--h3-font-size);
     margin-bottom: 0.5rem;
+    color: var(--title-color);
+}
+.contact_details{
+    color: var(--text-color);
 }
 
 .contact_form-group{

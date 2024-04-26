@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Portfolio.scss'
 import Menu from './Menu'
 import { FaLink } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 const Portfolio = () => {
     const [isFilter, setIsFilter] = useState([]);
     const filterItem = (category) => {
@@ -12,16 +13,17 @@ const Portfolio = () => {
             setIsFilter([]);
         }
     }
+    const { t } = useTranslation()
     return (
         <section className="work container section" id="portfolio">
-            <h2 className="section_title">Recent Works</h2>
+            <h2 className="section_title">{t(`work.name`)}</h2>
 
             <div className="work_filters">
-                <span className="work_item" onClick={() => filterItem('')}>Everything</span>
-                <span className="work_item" onClick={() => filterItem('Creative')}>Creative</span>
-                <span className="work_item" onClick={() => filterItem('Art')}>Art</span>
-                <span className="work_item" onClick={() => filterItem('Design')}>Design</span>
-                <span className="work_item" onClick={() => filterItem('Branding')}>Branding</span>
+                <span className="work_item" onClick={() => filterItem('')}>{t(`work.nav1`)}</span>
+                <span className="work_item" onClick={() => filterItem('Creative')}>{t(`work.nav2`)}</span>
+                <span className="work_item" onClick={() => filterItem('Art')}>{t(`work.nav3`)}</span>
+                <span className="work_item" onClick={() => filterItem('Design')}>{t(`work.nav4`)}</span>
+                <span className="work_item" onClick={() => filterItem('Branding')}>{t(`work.nav5`)}</span>
             </div>
             <div className="work_container grid">
                 {

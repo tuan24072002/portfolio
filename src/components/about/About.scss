@@ -30,6 +30,7 @@
 .about_description{
     margin-bottom: 1rem;
     text-align: justify;
+    color: var(--text-color);
 }
 .about_skills{
     row-gap: 1.25rem;
@@ -42,9 +43,11 @@
 .skills_name{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+    color: var(--title-color);
 }
 .skills_number{
     line-height: 1.2;
+    color: var(--text-color);
 }
 .skills_bar,.skill_percentage{
     height: 7px;
@@ -61,19 +64,19 @@
     width: 90%;
     border-radius: 0.25rem;
     height: 100%;
-    background-color: rgb(255, 209, 92);
+    background-color: var(--percent-color);
 }
 .ui_design{
     width: 80%;
     border-radius: 0.25rem;
     height: 100%;
-    background-color: rgb(255, 209, 92);
+    background-color: var(--percent-color);
 }
 .photography{
     width: 60%;
     border-radius: 0.25rem;
     height: 100%;
-    background-color: rgb(255, 209, 92);
+    background-color: var(--percent-color);
 }
 
 .about_boxes{
@@ -89,8 +92,12 @@
 
 .about_icon{
     font-size: var(--h1-font-size);
-    color: #ccc;
+    color: var(--icon-color);
 }
 .about_title{
     font-size: 1.875rem;
+    color: var(--title-color);
+}
+.about_subtitle{
+    color: var(--text-color);
 }

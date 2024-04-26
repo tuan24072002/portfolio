@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
 import './Sidebar.scss'
 import logo from '../../assets/logo.svg'
-import { IoHomeOutline, IoPersonOutline, IoBriefcaseOutline, IoSchoolOutline, IoCreateOutline, IoLayersOutline, IoChatbubbleEllipsesOutline } from "react-icons/io5";
-const Sidebar = () => {
+import { MdDarkMode, MdLightMode } from "react-icons/md";
+import { IoHomeOutline, IoPersonOutline, IoBriefcaseOutline, IoSchoolOutline, IoCreateOutline, IoLayersOutline, IoChatbubbleEllipsesOutline, IoLanguage } from "react-icons/io5";
+import Language from '../Language/Language';
+
+const Sidebar = (props) => {
     const [isActive, setIsActive] = useState(1);
+    const [show, setShow] = useState(false);
     return (
-        <aside className='aside'>
+        <aside className='aside' data-theme={props.mode ? 'dark' : 'light'}>
             <a href='#home' className='nav_logo'>
                 <img src={logo} alt='' />
             </a>
@@ -47,6 +51,18 @@ const Sidebar = () => {
                                 <i className="icon-bubble"><IoChatbubbleEllipsesOutline /></i>
                             </a>
                         </li>
+                        <li className="nav_item" onClick={() => setShow(true)}>
+                            <div className="nav_link language">
+                                <IoLanguage />
+                            </div>
+                        </li>
+                        <li className="nav_item" onClick={() => props.setMode(!props.mode)}>
+                            <div className="nav_link toggle_mode" style={props.mode ? { color: '#f1c40f' } : { color: '#e74c3c ' }}>
+                                {
+                                    props.mode ? <MdLightMode /> : <MdDarkMode />
+                                }
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -54,6 +70,7 @@ const Sidebar = () => {
             <div className="nav_footer">
                 <span className="copyright">&copy; 2024</span>
             </div>
+            <Language setShow={setShow} show={show} />
         </aside>
     )
 }

@@ -3,22 +3,23 @@ import './Blog.scss'
 import Image1 from '../../assets/blog-1.svg'
 import Image2 from '../../assets/blog-2.svg'
 import Image3 from '../../assets/blog-3.svg'
+import { useTranslation } from 'react-i18next'
 const Blog = () => {
+    const { t } = useTranslation()
     return (
         <section className="blog container section" id="blog">
-            <h2 className="section_title">Latest Posts</h2>
+            <h2 className="section_title">{t(`blog.name`)}</h2>
 
             <div className="blog_container grid">
                 <div className="blog_card">
                     <div className="blog_thumb">
-                        <a href="/"><span className="blog_category">Reviews</span></a>
                         <a href="/"><img src={Image1} alt="" className='blog_img' /></a>
                     </div>
                     <div className="blog_details">
-                        <h3 className="blog_title">5 Best App Development Tool for Your Projects</h3>
+                        <h3 className="blog_title">{t(`blog.title1`)}</h3>
                         <div className="blog_meta">
-                            <span className="blog_dot">09 February, 2022</span>
-                            <span className="blog_author">Tran Le Anh Tuan</span>
+                            <span className="blog_dot">{t(`blog.sub1`)}</span>
+                            <span className="blog_author">{t(`home.name`)}</span>
                         </div>
                     </div>
                 </div>
@@ -30,10 +31,10 @@ const Blog = () => {
                         <a href="/"><img src={Image2} alt="" className='blog_img' /></a>
                     </div>
                     <div className="blog_details">
-                        <h3 className="blog_title">Common Misconceptions About Payment</h3>
+                        <h3 className="blog_title">{t(`blog.title2`)}</h3>
                         <div className="blog_meta">
-                            <span className="blog_dot">07 February, 2022</span>
-                            <span className="blog_author">Tran Le Anh Tuan</span>
+                            <span className="blog_dot">{t(`blog.sub2`)}</span>
+                            <span className="blog_author">{t(`home.name`)}</span>
                         </div>
                     </div>
                 </div>
@@ -44,10 +45,10 @@ const Blog = () => {
                         <a href="/"><img src={Image3} alt="" className='blog_img' /></a>
                     </div>
                     <div className="blog_details">
-                        <h3 className="blog_title">3 Things to know about startup business</h3>
+                        <h3 className="blog_title">{t(`blog.title3`)}</h3>
                         <div className="blog_meta">
-                            <span className="blog_dot">05 February, 2022</span>
-                            <span className="blog_author">Tran Le Anh Tuan</span>
+                            <span className="blog_dot">{t(`blog.sub3`)}</span>
+                            <span className="blog_author">{t(`home.name`)}</span>
                         </div>
                     </div>
                 </div>

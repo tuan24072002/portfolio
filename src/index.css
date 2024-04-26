@@ -10,8 +10,13 @@
   --text-color: hsl(244,16%,43%);
   --body-color: hsl(258,60%,98%);
   --container-color: #fff;
-
-
+  --background-color: #f6f6f6;
+  --border-color:#454360;
+  --percent-color:rgb(255, 209, 92);
+  --icon-color:#ccc;
+  --date-color:#8b88b1;
+  --btn-color: #fff;
+  --background-sidebar-color:#e6e6e6;
   /*=========== Font and Typography ===========*/
   --body-font:"Rubik", sans-serif;
   --h1-font-size: 2.25rem;
@@ -31,6 +36,20 @@
 
   /*=========== Border Radius ===========*/
   --border-radius: 20px
+}
+[data-theme="dark"]{
+  --first-color: hsl(349, 53%, 35%);
+  --title-color: #ffffff;
+  --text-color: #ffffff;
+  --body-color: hsl(258,60%,98%);
+  --container-color: #ababab;
+  --background-color: #262626;
+  --border-color:#454360;
+  --percent-color:rgb(255, 209, 92);
+  --icon-color:#ccc;
+  --date-color:#878693;
+  --btn-color: #fff;
+  --background-sidebar-color:#4d4d4d;
 }
 /*====================== Responsive Typography ======================*/
 @media screen and(max-width: 1024px) {
@@ -108,6 +127,7 @@ img{
   font-weight: var(--font-bold);
   position: relative;
   margin-bottom: 3.75rem;
+  color: var(--title-color);
   /* padding-top: 1rem; */
 }
 .section_title::before{
@@ -119,17 +139,18 @@ img{
   left: -0.875rem;
   top: 0.5rem;
 }
-.btn{
+.button{
   cursor: pointer;
   padding: 0.75rem 0.25rem;
   line-height: 1;
   border-radius: 5px;
   box-shadow: 0 0 1px rgb(0 0 0 / 0%);
   border: 1px solid transparent;
-  color: #fff;
+  color: var(--btn-color);
   display: inline-block;
   background-color: var(--first-color);
   font-weight: var(--font-bold);
+  text-decoration: none;
 }
 
 @keyframes button-push{
@@ -141,6 +162,6 @@ img{
   }
 }
 
-.btn:hover{
+.button:hover{
   animation: button-push 0.5s linear;
 }
