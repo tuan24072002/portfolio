@@ -1,0 +1,76 @@
+{
+    "language": {
+        "name": "Chọn ngôn ngữ",
+        "close": "Đóng"
+    },
+    "home": {
+        "name": "Trần Lê Anh Tuấn",
+        "iam": "Tôi là",
+        "contact": "Liên hệ",
+        "scroll": "Trượt xuống"
+    },
+    "about": {
+        "name": "Thông tin về tôi",
+        "desc": "Tôi là Trần Lê Anh Tuấn, nhà phát triển web đến từ Việt Nam. Tôi có nhiều kinh nghiệm về thiết kế, xây dựng và tùy chỉnh trang web, tôi cũng giỏi ReactJS.",
+        "download": "Tải CV",
+        "development": "Phát triển website",
+        "uiux": "Thiết kế UI/UX",
+        "photography": "Chụp hình",
+        "completed": "Dự án đã hoàn thành",
+        "coffee": "Tách cà phê",
+        "satisfied": "Khách hàng hài lòng"
+    },
+    "services": {
+        "name": "Dịch vụ"
+    },
+    "experience": {
+        "name": "Kinh nghiệm"
+    },
+    "work": {
+        "name": "Công việc gần đây",
+        "nav1": "Mọi thứ",
+        "nav2": "Sáng tạo",
+        "nav3": "Nghệ thuật",
+        "nav4": "Thiết kế",
+        "nav5": "Xây dựng thương hiệu"
+    },
+    "price": {
+        "name": "Các gói",
+        "title1": "Cơ bản",
+        "title2": "Cao cấp",
+        "title3": "Nâng cao",
+        "recommend": "Khuyên dùng",
+        "desc1": "Một lựa chọn đơn giản nhưng mạnh mẽ để quản lý doanh nghiệp của bạn",
+        "sub1": "Hỗ trợ Email",
+        "desc2": "Sản phẩm không giới hạn bao gồm tích hợp ứng dụng và nhiều tính năng hơn",
+        "sub2": "Hỗ trợ Thứ Hai-Thứ Sáu",
+        "desc3": "Một lựa chọn sáng suốt cho các công ty lớn và cá nhân",
+        "sub3": "Hỗ trợ 24/7",
+        "month": "Tháng",
+        "started": "Bắt đầu"
+    },
+    "review": {
+        "name": "Khách hàng & đánh giá",
+        "sub": "Nhà thiết kế sản phẩm tại Dribble",
+        "comment": "Tôi thích làm việc với chủ đề này và học được rất nhiều điều. Các bạn khiến quá trình này trở nên vui vẻ và thú vị. Chúc may mắn! 👍"
+    },
+    "blog": {
+        "name": "Bài viết mới nhất",
+        "title1": "5 công cụ tốt nhất để phát triển ứng dụng cho dự án của bạn",
+        "title2": "Những quan niệm sai lầm phổ biến về thanh toán",
+        "title3": "3 điều cần biết về khởi nghiệp kinh doanh",
+        "sub1": "09 tháng 2 năm 2022",
+        "sub2": "07 tháng 2 năm 2022",
+        "sub3": "05 Tháng Hai, 2022"
+    },
+    "contact": {
+        "name": "Liên hệ",
+        "title": "Hãy nói về mọi thứ!",
+        "sub": "Không thích biểu mẫu? Gửi email cho tôi.",
+        "btn": "Gửi tin nhắn",
+        "ip1": "Điền tên",
+        "ip2": "Điền email",
+        "ip3": "Điền chủ đề",
+        "ip4": "Viết tin nhắn"
+    }
+}
