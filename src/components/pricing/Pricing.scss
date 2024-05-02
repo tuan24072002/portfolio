@@ -4,7 +4,10 @@
 .pricing_container{
     grid-template-columns: repeat(3,1fr);
     align-items: center;
-    column-gap: 0.875rem;
+    gap: 0.875rem;
+    @media screen and (max-width: 785px){
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 .pricing_item{
     padding: 1.875rem 2.5rem;
@@ -47,6 +50,7 @@
     position: relative;
     z-index: 1;
 }
+
 .badge{
     position: absolute;
     right: 0;

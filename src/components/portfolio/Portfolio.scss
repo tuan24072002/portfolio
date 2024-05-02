@@ -4,9 +4,12 @@
 .work_filters{
     display: flex;
     align-items: center;
-    column-gap: 1.875rem;
+    gap: 1.875rem;
     margin-bottom: 2.5rem;
     color: var(--title-color);
+    @media screen and (max-width: 545px) {
+        flex-direction: column;
+    }
 }
 .work_item{
     cursor: pointer;

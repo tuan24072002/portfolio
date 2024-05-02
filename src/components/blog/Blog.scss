@@ -4,6 +4,20 @@
 .blog_container{
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.875rem;
+    @media screen and (max-width: 815px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.875rem;
+        .blog_card:nth-child(3){
+            position: relative;
+            left: 50%;
+        }
+    }
+    @media screen and (max-width: 570px) {
+        grid-template-columns: repeat(1, 1fr);
+        .blog_card:nth-child(3){
+            left: 0;
+        }
+    }
 }
 
 .blog_card{

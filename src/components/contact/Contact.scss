@@ -5,6 +5,10 @@
 .contact_container{
     grid-template-columns: 4fr 8fr;
     column-gap: 1.875rem;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.875rem;
+    }
 }
 .contact_title{
     font-size: var(--h3-font-size);
@@ -19,6 +23,9 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 1.5rem;
+    @media screen and (max-width: 540px) {
+        grid-template-columns: repeat(1 ,1fr);
+    }
 }
 
 .contact_form-div{

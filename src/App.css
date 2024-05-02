@@ -2,3 +2,8 @@
   margin-left: 100px;
   background-color: var(--background-color);
 }
+@media screen and (max-width: 345px) {
+  .main{
+    margin-left: 50px;
+  }
+}
